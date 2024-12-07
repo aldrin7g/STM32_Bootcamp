@@ -1,0 +1,49 @@
+Changes in docusaurus.config.js
+
+  (https://www.youtube.com/watch?v=NiHFqziyvyk)
+
+  url: 'https://aldrin7g.github.io',
+  baseUrl: '/stm32docs/',
+
+  organizationName: 'aldrin7g', // Usually your GitHub org/user name.
+  projectName: 'stm32docs', // Usually your repo name.
+
+
+
+Install Git in Windows
+
+npm install --global yarn
+yarn --version
+
+
+
+SSH Keys in GitHub
+
+(https://www.youtube.com/watch?v=X40b9x9BFGo)
+
+// paste the below commands in gitbash in PC
+
+ssh-keygen -t ed25519 -C "aldring@karunya.edu.in"
+
+click <Enter>
+
+click <Enter>
+
+clip < ~/.ssh/id_ed25519.pub
+
+#now paste the key in ssh and gsh keys in GitHub under SSH Keys in settings, give any title
+
+
+Commit Changes to GitHub, paste codes in Gitbash
+
+git init
+git add .
+git commit -m "Initial commit"
+
+
+Again run the below commands in gitbash in PC
+
+git config --global user.name "aldrin7g"
+git config --global user.email "aldring@karunya.edu.in"
+
+GIT_USER=aldrin7g USE_SSH=true yarn deploy
